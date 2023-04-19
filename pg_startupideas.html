@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
     <script src="https://kit.fontawesome.com/d9596d689f.js" crossorigin="anonymous"></script>
+
+    <script>
+      function toggleTLDR() {
+        var x = document.getElementById("tldr");
+        var txt = document.getElementById("tldr-txt");
+        if (x.innerHTML === "<a>TLDR &gt;</a>") {
+          x.innerHTML = txt.innerHTML;
+        } else {
+          x.innerHTML = "<a>TLDR &gt;</a";
+        }
+      }
+    </script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -18,6 +31,16 @@
         </p>
         <p>April 18, 2023</p>
         <a href="/blog">&lt; back</a>
+        <br><br>
+        <p id="tldr-txt" style="display: none;">
+          <a>TLDR &lt;</a><br>
+          Don't try to think up startup ideas.
+          Notice problems – ideally, problems that <i>you</i> face, and would pay to have solved immediately.
+          Give yourself time, and work on projects – anything that seems cool.
+          Don't worry about competition, this is really a good sign.
+          Live in the future, and build what seems interesting.
+        </p>
+        <p id="tldr" onclick="toggleTLDR()"><a>TLDR &gt;</a></p>
       </header>
       <section>
         
@@ -29,7 +52,7 @@
 
         Why do so many founders build things no one wants? Because they begin by trying to think of startup ideas. That m.o. is doubly dangerous: it doesn't merely yield few good ideas; it yields bad ideas that sound plausible enough to fool you into working on them.<br><br>
 
-        The danger of an idea like this is that when you run it by your friends, they don't say "I would never use this." They say "Yeah, maybe I could see using something like that." Even when the startup launches, it will sound plausible to a lot of people. They don't want to use it themselves, at least not right now, but they could imagine other people wanting it. Sum that reaction across the entire population, and you have zero users.<br><br>
+        The danger of an idea like this is that when you run it by your friends, they don't say "I would never use this". They say "Yeah, maybe I could see using something like that." Even when the startup launches, it will sound plausible to a lot of people. They don't want to use it themselves, at least not right now, but they could imagine other people wanting it. Sum that reaction across the entire population, and you have zero users.<br><br>
 
         When a startup launches, there have to be at least some users who really need what they're making — not just people who could see themselves using it one day, but who want it urgently. Usually this is a small group.<br><br>
 
